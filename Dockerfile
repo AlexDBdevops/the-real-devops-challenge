@@ -1,4 +1,4 @@
 from mongo:latest
 
 COPY ./data/restaurant.json /restaurant.json
-CMD mongoimport --host mongodb --db exampleDb --collection restaurants --type json --file /restaurants.json --jsonArray
+CMD mongoimport --host localhost:27017 --db testDB --collection restaurant --type json --file /restaurants.json
